@@ -132,3 +132,22 @@ section {
     margin-left: -16px;
     z-index: 1;
 }
+
+/*=============================
+        About 
+==============================*/
+#about h5 {
+    font-size: 42px;
+    font-weight: 100;
+    margin: 25px;
+}
+
+#about-right p {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+#about-right p:first-child {
+    margin-bottom: 30px;
+}
