@@ -1,50 +1,252 @@
-<!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Ahmad Javed</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Ahmad Javed</h1>
-						<p>Mathematics and Computing Engineering &nbsp;&bull;&nbsp; Delhi Technological University</p>
-						<nav>
-							<ul>
-								<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
-								<li><a href="https://stackoverflow.com/users/7483151/ahmad-javed" class="icon brands fa-stack-overflow"><span class="label">Stack Overflow</span></a></li>
-								<!-- <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
-								<li><a href="https://github.com/ahmadjaved97" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="mailto:ahmadjaved97@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-								<li><a href="https://www.facebook.com/ahmad.javed.7" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							</ul>
-						</nav>
-					</header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Ahmad Javed - Master's student in Computer Science at University of Bonn. Deep Learning researcher focusing on AI and Machine Learning.">
+  <meta name="author" content="Ahmad Javed">
+  <title>Ahmad Javed - Portfolio</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright" style="font-size:x-small;">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
-					</footer>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
-			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <img src="assets/logo.png" alt="AJ Logo" class="nav-logo-img">
+        <span>Ahmad Javed</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <span class="nav-separator">|</span>
+        <a href="#projects">Projects</a>
+        <span class="nav-separator">|</span>
+        <a href="#resume">Experience</a>
+        <span class="nav-separator">|</span>
+        <a href="#education">Education</a>
+      </div>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+        <svg class="moon-icon" style="display:none" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero / About Section -->
+    <section id="about" class="hero">
+      <img src="assets/profile.jpg" alt="Ahmad Javed" class="hero-image">
+
+      <h1 class="hero-greeting">Hi, I'm Ahmad!</h1>
+
+      <div class="social-links">
+        <a href="https://github.com/ahmadjaved97" target="_blank" rel="noopener" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/ahmad-javed-097/" target="_blank" rel="noopener" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+          LinkedIn
+        </a>
+        <a href="mailto:ahmadjaved97@gmail.com" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+          </svg>
+          Email
+        </a>
+      </div>
+
+      <div class="about-text">
+        <p>
+          I'm a <strong class="highlight">Master's student in Computer Science</strong> at the
+          <strong>University of Bonn</strong>, Germany, and currently working as a <strong>Research Assistant</strong>
+          at the Computer Vision Group. My research interests lie at the intersection of
+          <strong>Deep Learning</strong>, <strong>Computer Vision</strong>, and <strong>Image Processing</strong>.
+        </p>
+        <p>
+          Previously, I worked as a <strong>Deep Learning Engineer at Intello Labs</strong> for over 3 years,
+          where I developed and deployed models for quality assessment of agricultural produce using deep learning
+          and image processing techniques. I achieved 95%+ accuracy in identification and deployed models processing
+          over 10 tons of fruits daily on sorting machines.
+        </p>
+        <p>
+          I hold a <strong>B.Tech in Mathematics and Computing</strong> from Delhi Technological University.
+          My core competencies include Python, Machine Learning, Deep Learning, Image Processing, and Data Science.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-thumbnail">🖼️</div>
+          <div class="project-content">
+            <a href="https://github.com/ahmadjaved97/ImageAtlas" target="_blank" rel="noopener" class="project-title">
+              ImageAtlas
+            </a>
+            <p class="project-description">
+              A comprehensive toolkit for organizing, cleaning, and analysing your image datasets.
+              ImageAtlas helps ML practitioners and data scientists efficiently manage large collections
+              of images with powerful analysis and visualization features.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-tech">Python</span>
+              <span class="tag tag-tech">Computer Vision</span>
+              <span class="tag tag-tech">Data Analysis</span>
+              <a href="https://github.com/ahmadjaved97/ImageAtlas" target="_blank" rel="noopener"
+                class="tag tag-link">GITHUB</a>
+            </div>
+            <div class="project-stats">
+              <span>⭐ 17 stars</span>
+              <span>🍴 1 fork</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="resume">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <span class="timeline-title">Research Assistant</span>
+              <span class="timeline-org"> — University of Bonn</span>
+            </div>
+            <span class="timeline-date">Dec 2023 – Present</span>
+          </div>
+          <div class="timeline-location">📍 Bonn, Germany</div>
+          <p class="timeline-description">
+            Computer Vision Group, Universität Bonn. Working on deep learning and computer vision research.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <span class="timeline-title">Deep Learning Engineer</span>
+              <span class="timeline-org"> — Intello Labs</span>
+            </div>
+            <span class="timeline-date">Jul 2020 – Aug 2023</span>
+          </div>
+          <div class="timeline-location">📍 Gurgaon, India</div>
+          <p class="timeline-description">
+            Developed deep learning solutions for agricultural quality assessment. Deployed instance segmentation
+            and object detection models for 20+ commodities achieving 95%+ accuracy. Spearheaded fruit sorting
+            machine development processing 10+ tons daily.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <span class="timeline-title">Backend Developer</span>
+              <span class="timeline-org"> — LUMOS</span>
+            </div>
+            <span class="timeline-date">Jun 2019 – Jul 2019</span>
+          </div>
+          <div class="timeline-location">📍 New Delhi, India</div>
+          <p class="timeline-description">
+            Developed MVP for an Influencer Marketing Platform using Django. Built Python scripts for scraping
+            and analyzing social media influencer data.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <span class="timeline-title">M.Sc. Computer Science</span>
+              <span class="timeline-org"> — University of Bonn</span>
+            </div>
+            <span class="timeline-date">Oct 2023 – Oct 2025</span>
+          </div>
+          <div class="timeline-location">📍 Bonn, Germany</div>
+          <p class="timeline-description">
+            Master's degree in Computer Science with focus on Machine Learning and Computer Vision.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <span class="timeline-title">B.Tech Mathematics & Computing</span>
+              <span class="timeline-org"> — Delhi Technological University</span>
+            </div>
+            <span class="timeline-date">2016 – 2020</span>
+          </div>
+          <div class="timeline-location">📍 Delhi, India</div>
+          <p class="timeline-description">
+            Bachelor of Technology in Mathematics and Computing Engineering.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <span class="timeline-title">Intermediate (+2)</span>
+              <span class="timeline-org"> — Jamia Millia Islamia</span>
+            </div>
+            <span class="timeline-date">2013 – 2015</span>
+          </div>
+          <div class="timeline-location">📍 Delhi, India</div>
+          <p class="timeline-description">
+            Mathematics, Physics, Chemistry & Computer Science.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Ahmad Javed. Built with ❤️</p>
+    <p class="footer-credit">Inspired by <a href="https://jrosser.co.uk/" target="_blank"
+        rel="noopener">jrosser.co.uk</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
